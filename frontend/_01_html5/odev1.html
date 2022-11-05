@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .bor {
+            border: 8px solid aqua;
+            width: 40rem;
+            height: 20rem;
+        }
+
+        .bor2 {
+            border: 8px solid aqua;
+            width: 80rem;
+            height: 20rem;
+            margin: 5rem;
+        }
+
+        .bor2m {
+            border: 8px solid yellow;
+            width: 20rem;
+            height: 10rem;
+            margin: 3rem;
+        }
+
+        li {
+            list-style: none;
+
+            background-color: purple;
+            color: white;
+            font-size: large;
+            font-weight: 700;
+            padding: 1rem;
+            margin: 0rem 0.3rem;
+            width: 100%;
+            text-align: center;
+        }
+
+        li:hover {
+            background-color: blue;
+            cursor: pointer;
+        }
+
+        ul {
+            display: flex;
+            width: 98%;
+            height: 6rem;
+
+        }
+
+        .SS {
+            display: none;
+            color: black;
+            height: 4rem;
+            margin: 0px;
+            padding-top: 15px;
+            border: solid black 2px;
+        }
+
+        li:hover>.SS {
+            display: block;
+            background-color: gainsboro;
+            height: 100%;
+
+        }
+
+        .boxs {
+            width: 15rem;
+            height: 15rem;
+            background-color: orange;
+            margin: 1rem;
+            box-shadow: 10px 10px 10px black;
+
+        }
+
+        .boxs:hover {
+            width: 30rem;
+            height: 30rem;
+            background-color: cadetblue;
+            cursor: pointer;
+            box-shadow: 20px 20px 10px black;
+            transition: 500ms;
+        }
+
+        .b {
+            border: solid yellow 10px;
+        }
+
+        .ba {
+            width: 70%;
+        }
+
+        .bb {
+            width: 30%;
+        }
+
+        .ha {
+            height: 70%;
+        }
+
+        .hb {
+            height: 30%;
+        }
+
+        .bg {
+            background-color: aquamarine;
+        }
+
+        .bm {
+            margin: 15px;
+        }
+
+        table {
+            margin: 3rem;
+            display: table;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            padding: 1rem;
+            border: solid black 1px;
+            margin: 0px;
+        }
+
+        th {
+            background-color: #ebebeb;
+        }
+
+        tr {
+            border: solid black 1px;
+        }
+
+        tr:hover {
+            background-color: rgb(44, 44, 44);
+            color: white;
+            cursor: pointer;
+        }
+
+        tr:hover:nth-child(even) {
+            background-color: rgb(44, 44, 44);
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f3f3f3;
+        }
+
+        button {
+            transition-duration: 0.4s;
+            background-color: rgba(0, 0, 0, 0);
+            width: 100%;
+            height: 100%;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-size: larger;
+            display: flex;
+            align-items: center; 
+        }
+
+        button:hover {
+            background-color: #575757;
+            color: white;
+        }
+        a{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Border Odevi -->
+    <div style="display:flex;">
+        <div class="bor" style="border-radius: 80%;">
+        </div>
+        <div class="bor" style="border-radius: 2%;">
+        </div>
+    </div>
+    <!-- Float Odevi -->
+    <div class="bor2" style="border-color: red ;">
+        <div class="bor2m" style="float:left ;">
+            <p style="margin-top:3rem ; font-size:50px ; color:aqua ;">Float left</p>
+        </div>
+        <div class="bor2m" style="float:right ;">
+            <p style="margin-top:3rem ; font-size:50px ; color:aqua ;">Float right</p>
+        </div>
+    </div>
+    <!-- DropDownList Odevi -->
+    <div>
+        <ul>
+            <li>
+                <p>LOGO</p>
+            </li>
+            <li>
+                <p>HOME</p>
+            </li>
+            <li>
+                <p>PRODUCT</p>
+            </li>
+            <li>
+                <p>LOGIN</p>
+                <p class="SS">UYE OL</p>
+                <p class="SS">UYE GIRISI</p>
+            </li>
+        </ul>
+    </div>
+    <!-- BoxShadow&TransdationOdev -->
+    <div style="display:flex ; margin: 10rem 0rem; ">
+        <div class="boxs"></div>
+        <div class="boxs"></div>
+        <div class="boxs"></div>
+        <div class="boxs"></div>
+        <div class="boxs"></div>
+        <div class="boxs"></div>
+    </div>
+    <!-- DivOdev-2 -->
+    <div class="b" style="width:90rem ; height: 30rem; display:flex; ">
+        <div class=" ba" style="display: grid;">
+            <div class="b bm">a</div>
+            <div class="b bm">b</div>
+        </div>
+        <div class="bm bb" style="display: grid ;">
+            <div class="b bm ha">a</div>
+            <div class="b bm hb">b</div>
+        </div>
+    </div>
+    <!-- TableOdev -->
+    <div style="margin-top:5rem ;">
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Honda</td>
+                    <td>Accord</td>
+                    <td>2009</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Toyota</td>
+                    <td>Camry</td>
+                    <td>2012</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Hyundai</td>
+                    <td>Elantra</td>
+                    <td>2010</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Ford</td>
+                    <td>Focus</td>
+                    <td>2008</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Nissan</td>
+                    <td>Sentra</td>
+                    <td>2011</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>BMW</td>
+                    <td>M3</td>
+                    <td>2010</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>              
+    <!-- NavOdev -->
+    <div>
+        <nav style="background-color: rgb(61, 61, 61); display:grid ; justify-content: center;">
+            <div style="display: flex; width:70%; ">
+                <a href="#" style="display: flex; align-items: center; font-size: x-large;">
+                    <p style="line-height: none;">LOGO</p>
+                </a>
+                <li style="background-color: rgba(0, 0, 0, 0);">
+                    <button >
+                        <img style="margin:0.8rem ; color:white ;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAvklEQVRIie3TIU7DUBzH8Q+kwZBgENOYORQ3mEPjuMSSmVmuwAHmdgYcGsMFMHMkWBIEiK0T6z+Bho7X9iEI/SVf13xe+pLHf9usKvsOcIOy6haHufACi094tMRRX/wYd9/g0T1OuuKneNiDR48YtcXP8JSARyuMU/FzPLfAoxdc/IRP8NoBj95w2YRf4b0HHn3guo5Psc6ARxvM2T2g+sqmX0zcFzPba2zarx9QtPi2fp1JV/n3r2g4YFj/bQHE1m5g5d3/+AAAAABJRU5ErkJggg==">
+                        <p>Home</p>
+                    </button>
+                </li>
+                <li style="background-color: rgba(0, 0, 0, 0);">
+                    <button >
+                        <img style="margin:0.8rem ;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABa0lEQVRIie2Uu0oDQRSGv02CeIkIaSz0EdL5CnZ22tgoaGljkSJW4juktRUv4FOIpJEYtLESgo1FYCGVKGQt9qyezJxxdyWFhT8cmDn7X2bZOQt/DFWpqWMG2AWegGfgEJidhvGCmL0AiVOvwAmw9BvjBnAMDJVhH9iW6qv+ULiNMgEjZdAFNoBIPY+k11W8kWVUCQQsqvUqsGJw54HlgMbDLXCj9tmp7tW6B6xL9Zx+tg75eYSx7Cukt2eA/5EHwI5wEtGE/LzGgSOYA9qK12bymo5FUzgAoIUPi2dxfwzYIh0sC6EARLNZJCAGroFaiYCaaOIiAXeyPsP/71gBVeEmojV5b9I4App8T/ApkwPmCiPhZBPdFI9EPL9wpcQtYE1eNwE6hNERTiyalvK51MQ66WDoa3ih9nuG+b56fq5OnohX3RW4IboejIDHANc0zwt5N7gfZc11iHUyFxbHM4/chhLncYtw/pGPTxOBrR2FOgk1AAAAAElFTkSuQmCC">
+                        <p>Ürünler</p>
+                    </button>
+                </li>
+                <li style="background-color: rgba(0, 0, 0, 0);">
+                    <button >
+                        <img style="margin:0.8rem ;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAA50lEQVRIie3UvUoDQRTF8Z+KKEiwEWy0Ugj4GnmOPI74IFYJAWsRCx8hIL6DEIWkMOlisRs/lszk7uI26h9OM7P3nGHu3eGfT3bxiDF22gg4xAJvOGgjAM5x1pZ5I04xwqzUDbqJb5dfFDZ/qRQu8Vru5UJCjNaYrzT8iYBZJmAaDdiOpq0xCpELuM/s3cbPkqaraGj1eiY4SdTU6gHFtAwVdz7FIGP+S9lKrB+jjx4ucFSuT/CkGIBrPNcN3MMV5tL/wEpzXJY1IfZxFzCu6gGdSMCggfmmp+NbD2rN7wavD5o+FX+Id8hAYYEnCSzmAAAAAElFTkSuQmCC">
+                        <p>Hakkımızda</p>
+                    </button>
+                </li>
+                <li style="background-color: rgba(0, 0, 0, 0);">
+                    <button >
+                        <img style="margin:0.8rem ;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAA2ElEQVRIie3UMU4CQRjF8R8aIqUNDUjNITyGXsADUHIoCAmloeAUaieFFlZqAoUFIYFid5Fs3J1NZjr5J696mfd2Zr5ZziRigBk2ueYYpgz/wr6k79yLZvZHeKFpioJNTcE6tPgisnyfomBZ4y2af0s1Q9mFlo/nEzcpCsimZSo78zUmKcP/OZcB7xYPeMFPye9ijB0+NBjZgg5GePc7Ma+4w3Wue6xO/Ld8TScU3sez6pcb0hN6dQWLiPBCj6eBrVLBFu3QNgNscVVV0PiiAhxzY392Z+I5ABpQV/WWmyaWAAAAAElFTkSuQmCC">
+                        <p>Login</p>
+                    </button>
+                </li>
+            </div>
+        </nav>
+    </div>
+
+</body>
+
+</html>
